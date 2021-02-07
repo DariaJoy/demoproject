@@ -17,6 +17,17 @@
   margin-right: 41px;
 }
 
+.searchSvg {
+  @include zeroMargin;
+  fill: #E8E8E8;
+}
+
+.searchSvg:hover {
+  fill             : $mainPinkColor;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation        : heartbeat 1.5s ease-in-out infinite both;
+}
+
 .accSvg {
   margin-right: 33px;
 }
@@ -112,9 +123,15 @@
 }
 
 .menuSvg {
+  fill: #E8E8E8;
   cursor: pointer;
 }
+.menuSvg:hover {
+  fill: $mainPinkColor;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation        : heartbeat 1.5s ease-in-out infinite both;
 
+}
 .menuBurgerBtn {
   outline         : 0;
   border          : 0;
@@ -132,4 +149,22 @@
 
 .burgerSvg:hover {
   fill: $mainPinkColor;
+}
+.accSvg{
+  fill: #E8E8E8;
+}
+.accSvg:hover {
+  fill: $mainPinkColor;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation        : heartbeat 1.5s ease-in-out infinite both;
+}
+
+.cartSvg {
+  fill: #E8E8E8;
+}
+
+.cartSvg:hover {
+  fill: $mainPinkColor;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation        : heartbeat 1.5s ease-in-out infinite both;
 }

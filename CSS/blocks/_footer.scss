@@ -37,4 +37,6 @@
   .linkSocialFooterNet:hover {
     background-color: $mainPinkColor;
     color: #FFFFFF;
+    animation: goColor 0.5s 1;
+    transform: scale(1.2);
   }

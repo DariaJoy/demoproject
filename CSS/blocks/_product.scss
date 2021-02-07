@@ -26,11 +26,13 @@
   align-content  : center;
   text-decoration: none;
   border         : none;
-  border-radius: 0;
+  border-radius  : 0;
+  cursor         : pointer;
 }
 
 .productSliderLink:hover {
-  color: $mainPinkColor;
+  color    : $mainPinkColor;
+  transform: scale(1.2);
 }
 
 .forwardArrowProductSlider {
@@ -150,6 +152,8 @@
   padding-bottom : 64.5px;
 }
 
+
+
 .buttonProduct {
   color           : #F26376;
   font-weight     : 400;
@@ -163,13 +167,20 @@
   outline         : 1px solid #FF6A6A;
   @include position;
   justify-content: flex-start;
-  padding        : 7%;
+  align-items    : center;
+  fill           : #F26376;
 }
 
-.buttonProduct img {
-  margin-right: 18px;
-  margin-left : 10px;
-  align-self  : center;
+.buttonProduct svg {
+  margin: 20px;
+}
+
+.buttonProduct:hover {
+  background-color: $mainPinkColor;
+  color           : #ffffff;
+  fill            : #ffffff;
+  outline         : none;
+  animation       : goColor 0.5s 1;
 }
 
 .productProductsItems {

@@ -43,6 +43,17 @@ body {
   margin-right: 41px;
 }
 
+.searchSvg {
+  margin: 0;
+  fill: #E8E8E8;
+}
+
+.searchSvg:hover {
+  fill: #F16D7F;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
 .accSvg {
   margin-right: 33px;
 }
@@ -146,7 +157,14 @@ body {
 }
 
 .menuSvg {
+  fill: #E8E8E8;
   cursor: pointer;
+}
+
+.menuSvg:hover {
+  fill: #F16D7F;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 .menuBurgerBtn {
@@ -166,6 +184,26 @@ body {
 
 .burgerSvg:hover {
   fill: #F16D7F;
+}
+
+.accSvg {
+  fill: #E8E8E8;
+}
+
+.accSvg:hover {
+  fill: #F16D7F;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.cartSvg {
+  fill: #E8E8E8;
+}
+
+.cartSvg:hover {
+  fill: #F16D7F;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 .promo {
@@ -282,6 +320,13 @@ body {
 .categoriesHover {
   text-decoration: none;
   display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.categoriesHover:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .categoriesHoverText {
@@ -332,6 +377,13 @@ body {
 .categoriesHoverBottom {
   text-decoration: none;
   display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.categoriesHoverBottom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .categoriesHoverTextBottom {
@@ -387,18 +439,92 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .productsImgWrapLink {
   text-decoration: none;
+  margin: 0;
+  background-color: #F8F8F8;
+}
+
+.productPicture {
+  position: relative;
+  display: block;
+  width: 360px;
+  height: 420px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.productOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -423px;
+  opacity: 0;
+  width: 360px;
+  height: 420px;
+  background: rgba(58, 56, 56, 0.86);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.productOverlay:hover {
+  opacity: 1;
+}
+
+.productImg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.productPicture:hover .productImg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.overlayLink {
+  text-decoration: none;
+}
+
+.overlayButtun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 139px;
+  height: 44px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+  background: transparent;
 }
 
 .productsImg1 {
+  z-index: 6;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   background-color: #F8F8F8;
@@ -485,6 +611,8 @@ body {
 .button:hover {
   color: #ffffff;
   background-color: #F26376;
+  -webkit-animation: goColor 0.5s 1;
+          animation: goColor 0.5s 1;
 }
 
 .advantages {
@@ -637,6 +765,11 @@ body {
   float: left;
 }
 
+.feedbackSubscribeButton:hover {
+  -webkit-animation: goColor 0.5s 1;
+          animation: goColor 0.5s 1;
+}
+
 .footer {
   background-color: #222224;
 }
@@ -709,6 +842,10 @@ body {
 .linkSocialFooterNet:hover {
   background-color: #F16D7F;
   color: #FFFFFF;
+  -webkit-animation: goColor 0.5s 1;
+          animation: goColor 0.5s 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .breadcrumbCatalog {
@@ -817,6 +954,7 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   cursor: pointer;
+  z-index: 7;
 }
 
 .filter[open] > summary {
@@ -932,6 +1070,7 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
+  z-index: 7;
 }
 
 .tranding summary {
@@ -1001,6 +1140,7 @@ input[id="trandingNow"] {
   outline: none;
   border: none;
   cursor: pointer;
+  z-index: 7;
 }
 
 .size summary {
@@ -1062,6 +1202,7 @@ input[id="sizeCheckbox"] {
   outline: none;
   border: none;
   cursor: pointer;
+  z-index: 7;
 }
 
 .price:focus {
@@ -1238,10 +1379,13 @@ input[id="priceCheckbox"] {
   text-decoration: none;
   border: none;
   border-radius: 0;
+  cursor: pointer;
 }
 
 .productSliderLink:hover {
   color: #F16D7F;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .forwardArrowProductSlider {
@@ -1415,15 +1559,23 @@ input[id="priceCheckbox"] {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 7%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #F26376;
 }
 
-.buttonProduct img {
-  margin-right: 18px;
-  margin-left: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.buttonProduct svg {
+  margin: 20px;
+}
+
+.buttonProduct:hover {
+  background-color: #F16D7F;
+  color: #ffffff;
+  fill: #ffffff;
+  outline: none;
+  -webkit-animation: goColor 0.5s 1;
+          animation: goColor 0.5s 1;
 }
 
 .productProductsItems {
@@ -1513,6 +1665,89 @@ input[id="priceCheckbox"] {
   margin-left: 150px;
   cursor: pointer;
   z-index: 8;
+}
+
+.cartItemsBlockHeaderBtn:hover {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.cartItemsBlockSvg {
+  fill: #575757;
+}
+
+.cartItemsBlockSvg:hover {
+  fill: #F16D7F;
 }
 
 .cartItemsBlockText {
@@ -1633,7 +1868,7 @@ input[id="priceCheckbox"] {
 
 .cartItemsBtn {
   color: #6F6E6E;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   line-height: 16.8px;
   text-transform: capitalize;
@@ -1652,9 +1887,17 @@ input[id="priceCheckbox"] {
   outline: 1px solid #A4A4A4;
 }
 
-.cartItemsBtn:active,
 .cartItemsBtn:focus {
   outline: 1px solid #A4A4A4;
+  border: 0;
+}
+
+.cartItemsBtn:hover {
+  background-color: #F16D7F;
+  color: #ffffff;
+  outline: none;
+  -webkit-animation: goColor 0.5s 1;
+          animation: goColor 0.5s 1;
 }
 
 .adressCartCheckout {
@@ -1752,6 +1995,14 @@ input[id="priceCheckbox"] {
   outline: 1px solid #A4A4A4;
   cursor: pointer;
   border-radius: 0;
+}
+
+.adressBtn:hover {
+  background-color: #F16D7F;
+  color: #ffffff;
+  outline: none;
+  -webkit-animation: goColor 0.5s 1;
+          animation: goColor 0.5s 1;
 }
 
 .totalSubmit {
@@ -1894,6 +2145,41 @@ input[id="priceCheckbox"] {
   text-align: center;
   padding-top: 7%;
   font-weight: 300;
+}
+
+.checkoutLink:hover {
+  -webkit-animation: goColor 0.5s 1;
+          animation: goColor 0.5s 1;
+}
+
+@-webkit-keyframes goColor {
+  0% {
+    background-color: #F16D7F;
+    color: #E2E2E2;
+  }
+  50% {
+    background-color: #ffffff;
+    color: #F16D7F;
+  }
+  100% {
+    background-color: #F16D7F;
+    color: #E2E2E2;
+  }
+}
+
+@keyframes goColor {
+  0% {
+    background-color: #F16D7F;
+    color: #E2E2E2;
+  }
+  50% {
+    background-color: #ffffff;
+    color: #F16D7F;
+  }
+  100% {
+    background-color: #F16D7F;
+    color: #E2E2E2;
+  }
 }
 
 .registrationFormsWrap {
