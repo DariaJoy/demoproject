@@ -28,6 +28,7 @@
   border         : none;
   border-radius  : 0;
   cursor         : pointer;
+  transition     : 0.3s;
 }
 
 .productSliderLink:hover {
@@ -108,41 +109,80 @@
 
 .navProductDescription {
   @include zeroMargin;
-  @include position;
-  justify-content: center;
-  width          : auto;
-  padding-top    : 64.54px;
+  margin-top: 64.54px;
+  width: 373.02px;
 }
 
-.navProductDescription a {
-  @include zeroMargin;
+.productDetailsWrap {
   @include position;
-  text-decoration: none;
-  color          : #6F6E6E;
-  padding-right  : 23px;
+  @include zeroMargin;
+  justify-content: space-between;
 }
 
-.h5navProductDescription {
+.fa-chevron-down  {
+  padding-left: 9px;
+}
+
+.productDetailsWrap label {
+  cursor: pointer;
   @include zeroMargin;
+}
+
+.chooseColore {
+  @include zeroMargin;
+  outline      : none;
+  border       : none;
+  outline      : 0;
   font-weight  : 400;
   font-size    : 14px;
   line-height  : 16.8px;
-  padding-right: 9px;
+  color        : #6F6E6E;
+  cursor       : pointer;
 }
 
-.navProductDescriptionColor {
-  flex-basis: 30%;
-  @include zeroMargin;
+.chooseColore ::-webkit-details-marker {
+  display: none;
 }
 
-.navProductDescriptionSize {
-  flex-basis: 30%;
-  @include zeroMargin;
+.chooseColore[open] {
+  position: relative;
+  outline : 0;
+  outline : none;
+  border  : none;
+  cursor  : pointer;
+  z-index : 7;
 }
 
-.navProductDescriptionQuantity {
-  flex-basis: 30%;
-  @include zeroMargin;
+.chooseColore:focus {
+  outline: 0;
+  outline: none;
+  border : none;
+  cursor : pointer;
+}
+
+.chooseColore summary:focus {
+  outline: 0;
+  outline: none;
+  border : none;
+  cursor : pointer;
+}
+
+.chooseColoreBody {
+  position        : absolute;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : flex-start;
+  cursor          : pointer;
+  margin-top      : 10px;
+  background-color: #FFFFFF;
+  box-shadow      : 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width           : 128.02px;
+
+}
+
+input[id="coloreOf"] {
+  margin: 10px;
+  cursor: pointer
 }
 
 .productDescriptionButton {
@@ -151,8 +191,6 @@
   padding-top    : 48.41px;
   padding-bottom : 64.5px;
 }
-
-
 
 .buttonProduct {
   color           : #F26376;
@@ -169,6 +207,7 @@
   justify-content: flex-start;
   align-items    : center;
   fill           : #F26376;
+  transition     : 0.3s;
 }
 
 .buttonProduct svg {
