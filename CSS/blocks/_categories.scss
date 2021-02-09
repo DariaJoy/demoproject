@@ -7,16 +7,19 @@
   @include position;
   flex-wrap      : wrap;
   justify-content: space-between;
-  align-items    : stretch;
-  align-content  : stretch;
+  align-items    : center;
+  align-content  : center;
 }
 
 .categoriesImg {
-  width : 360px;
-  height: 260px;
+  height: 100%;
+  width: 100%;
+  
 }
 
 .categoriesHover {
+  width : 360px;
+  height: 260px;
   text-decoration: none;
   display        : block;
   transition: 0.3s;
@@ -34,7 +37,7 @@
   color         : #FFFFFF;
   text-align    : center;
   text-transform: uppercase;
-  padding-top   : 105px;
+  
 }
 
 .categoriesHoverTextPink {
@@ -49,30 +52,52 @@
 
 .forWomen {
   background-image: url(img/forWomen.jpg);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .forMen {
   background-image: url(img/forMen.jpg);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .forKids {
   background-image: url(img/forKids.jpg);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .accesories {
   flex-basis      : 100%;
   background-image: url(img/accesories.jpg);
   margin-top      : 30px;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .categoriesImgBottom {
-  width : $desktop;
-  height: 180px;
+  height: 100%;
+  width: 100%;
+  
 }
 
 .categoriesHoverBottom {
+  width : $desktop;
+  height: 180px;
   text-decoration: none;
-  display        : block;
   transition: 0.3s;
 }
 
@@ -88,5 +113,4 @@
   color         : #FFFFFF;
   text-align    : center;
   text-transform: uppercase;
-  padding-top   : 65px;
 }

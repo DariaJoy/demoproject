@@ -1,9 +1,10 @@
 .feedback {
-    background: #FBFBFB url(img/feedBackBG.png) no-repeat center center;
+    background: #FBFBFB url(img/feedBackBG.png) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: left buttom;
   }
   .feedbackWrap {
     @include position;
@@ -12,12 +13,17 @@
     height: 448px;
   }
   .feedbackTalk {
+    @include zeroMargin;
+    height: 225px;
     margin-top: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .feedbackFace {
     border-radius: 50px;
     text-align: center;
-    margin-left: 120px;
   }
   .h5FeedbackTalk {
     color: #222224;
@@ -27,8 +33,14 @@
     text-align: center;
   }
   .feedbackSubscribe {
+    @include zeroMargin;
+    height: 225px;
+    width: 557px;
     margin-top: 97px;
-    margin-right: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .h2feedbackSubscribe {
     color: #222224;

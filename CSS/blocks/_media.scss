@@ -1,0 +1,258 @@
+@media screen and (max-width: 1160px) {
+    .wrap {
+        width  : 768px - 20px * 2;
+    }
+
+    .promoWrap {
+        height: 367.57px;
+
+    }
+
+    .promoPhoto {
+        align-self  : center;
+        padding-left: 110px;
+    }
+
+    .titleHomePage {
+        padding-left: 60px + 40.21px;
+        align-self  : center;
+        @include zeroMargin
+    }
+
+    .h1TitleHomePage {
+        font-size  : 44px;
+        line-height: 52.8px;
+        @include zeroMargin
+    }
+
+    .h2TitleHomePageBlack,
+    .h2TitleHomePagePink {
+        font-size  : 24px;
+        line-height: 28.8px;
+        @include zeroMargin;
+        flex-basis: 40%;
+    }
+
+    .categories {
+        margin-top: 18.94px;
+    }
+
+    .categoriesHover {
+        width : 232.44px;
+        height: 167.62px;
+    }
+
+    .categoriesHoverBottom {
+        width : 734.94px;
+        height: 116.09px;
+    }
+
+    .categoriesImg {
+        background-size: 100%;
+
+    }
+
+    .accesories {
+        margin-top: 15px;
+    }
+
+    .products {
+        padding-top: 154.92px;
+    }
+
+
+    .productsButton {
+        margin-top   : 32.48px;
+        margin-bottom: 64.52px;
+    }
+
+    .productsImg1 {
+        margin-bottom: 10px;
+
+    }
+
+    .productsImg2 {
+        margin-bottom: 10px
+    }
+
+    .productsImg3 {
+        margin-bottom: 10px
+    }
+
+    .productsImg4 {
+        margin-bottom: 10px
+    }
+
+    .advantagesWrap {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        height        : 610px;
+        padding-top   : 48.16px;
+
+    }
+
+    .advantagesCategories1 {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-content  : center;
+        width          : 360px;
+        height         : 134px;
+        margin-bottom  : 48.37px
+    }
+
+    .advantagesImg {
+        @include zeroMargin;
+        padding-bottom: 28.07px
+    }
+
+    .h2Advantages {
+        @include zeroMargin;
+        padding-bottom: 16px;
+    }
+
+    .h5Advantages {
+        @include zeroMargin;
+
+    }
+
+    .advantagesCategories2 {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-content  : center;
+        width          : 360px;
+        height         : 134px;
+        margin-bottom  : 48.37px;
+    }
+
+    .advantagesCategories3 {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-content  : center;
+        width          : 360px;
+        height         : 134px;
+        margin-bottom  : 64px;
+    }
+
+    .feedback {
+        background-position: bottom center;
+    }
+
+    .feedbackWrap {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-content  : center;
+        height         : 693px;
+    }
+
+    .feedbackSubscribe {
+        align-self    : center;
+        padding-bottom: 140px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .wrap {
+        width  : 375px - 20px * 2;
+    }
+
+    .accSvg {
+        display: none;
+    }
+
+    .cartSvg {
+        display: none;
+    }
+
+    .promo {
+        background-image: linear-gradient(#F1E4E6 100%);
+    }
+
+    .promoWrap {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        height         : 363px;
+    }
+
+    .promoPhoto {
+        display: none;
+    }
+
+    .titleHomePage {
+
+        align-self: center;
+        @include zeroMargin
+    }
+
+    .linkTitleHomePage {
+        margin: 15%;
+    }
+
+    .h1TitleHomePage {
+        font-size  : 38px;
+        line-height: 45.6px;
+        @include zeroMargin
+    }
+
+    .h2TitleHomePageBlack,
+    .h2TitleHomePagePink {
+        font-size  : 20px;
+        line-height: 24px;
+        @include zeroMargin;
+        flex-basis: 32%;
+    }
+
+    .categories {
+        margin-top: 64px;
+    }
+
+    .categoriesHover {
+        width        : 343px;
+        height       : 247px;
+        margin-bottom: 32px;
+    }
+
+    .accesories {
+        background-image: url(/CSS/img/accesories-mob.jpg);
+    }
+
+    .products {
+        padding-top: 64px;
+    }
+
+    .productPicture {
+        width : 359px;
+        height: 418.83px;
+    }
+
+    .h4ProductsImg {
+        text-align   : left;
+        padding-right: 28.72px;
+    }
+
+    .footerWrap {
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .footer{
+        height: 143px;
+    }
+    .footerWrap {
+        height: 143px;
+    }
+    .footerCopyright {
+        order : 2;
+        height: 20px;
+    }
+    .footerNet {
+        margin: 0 auto;
+        order: 1;
+    }
+}

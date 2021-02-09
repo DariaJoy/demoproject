@@ -31,8 +31,7 @@
   @include position;
   flex-wrap      : wrap;
   justify-content: space-between;
-  align-items    : flex-start;
-  align-content  : flex-start;
+ 
 }
 
 .productsImgWrapLink {
@@ -115,6 +114,7 @@
 .productsImg4 {
   flex-basis      : 30%;
   background-color: #F8F8F8;
+  margin-bottom   : 30px;
 }
 
 .productsImg5 {
@@ -152,28 +152,47 @@
   color      : $mainPinkColor;
 }
 
+.productsButton {
+  @include position;
+  justify-content: center;
+  align-content  : center;
+  width: $desktop;
+  margin-top     : 48px;
+  margin-bottom  : 95px;
+
+}
+
 .button {
-  color           : #F26376;
-  font-weight     : 400;
-  font-size       : 16px;
-  line-height     : 19.2px;
-  text-decoration : none;
-  text-transform  : capitalize;
-  text-align      : center;
-  padding-top     : 15px;
+  cursor          : pointer;
   background-color: #ffffff;
-  display         : block;
   width           : 212px;
   height          : 48px;
   outline         : 1px solid #F26376;
-  position        : relative;
-  margin-left     : 463px;
-  margin-top      : 48px;
-  margin-bottom   : 95px;
+  align-self      : center;
+  border          : none;
+  border-radius   : 0;
+ 
+}
+
+.button a {
+  text-decoration: none;
+  color          : #F26376;
+  font-weight    : 400;
+  font-size      : 16px;
+  line-height    : 19.2px;
+  text-transform : capitalize;
+  text-align     : center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
 }
 
 .button:hover {
-  color           : #ffffff;
-  background-color: #F26376;
-  animation: goColor 0.5s 1;
+  animation       : goColor 0.5s 1;
+  background-color: $mainPinkColor;
+}
+.button a:hover{
+  color: #FFFFFF;
+  
 }

@@ -139,12 +139,18 @@ input[type="radio"] {
     text-align      : left;
     padding-left    : 26px;
     margin-bottom   : 96px;
+    transition: 0.3s;
 }
 
 .buttonJoinIn img {
     padding-left: 20px;
 }
-
+.buttonJoinIn:hover {
+    background-color: $mainPinkColor;
+    color           : #ffffff;
+    outline         : none;
+    animation: goColor 0.5s 1;
+}
 .h2RegistrationLoyaltyPerks {
     font-weight   : 300;
     font-size     : 24px;
