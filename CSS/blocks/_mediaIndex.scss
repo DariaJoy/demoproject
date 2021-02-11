@@ -1,6 +1,10 @@
 @media screen and (max-width: 1160px) {
     .wrap {
-        width  : 768px - 20px * 2;
+        width: 768px - 16px * 2;
+    }
+
+    .header {
+        width: 100%;
     }
 
     .promoWrap {
@@ -155,9 +159,13 @@
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
     .wrap {
-        width  : 375px - 20px * 2;
+        width: 375px - 16px * 2px;
+    }
+
+    .header {
+        width: 100%;
     }
 
     .accSvg {
@@ -241,18 +249,21 @@
         align-items    : center;
     }
 
-    .footer{
+    .footer {
         height: 143px;
     }
+
     .footerWrap {
         height: 143px;
     }
+
     .footerCopyright {
         order : 2;
         height: 20px;
     }
+
     .footerNet {
         margin: 0 auto;
-        order: 1;
+        order : 1;
     }
 }
