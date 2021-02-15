@@ -3,8 +3,10 @@
         width: 768px - 16px * 2;
     }
 
-    .header {
-        width: 100%;
+    .headerWrap {
+        width           : 768px;
+        background-color: #222222;
+        color           : white;
     }
 
     .promoWrap {
@@ -12,29 +14,38 @@
 
     }
 
-    .promoPhoto {
-        align-self  : center;
-        padding-left: 110px;
+    .promoHomePage {
+        margin-left: 40%;
     }
 
     .titleHomePage {
-        padding-left: 60px + 40.21px;
-        align-self  : center;
-        @include zeroMargin
+        width: 311px;
+    }
+
+    .linkTitleHomePage {
+        @include zeroMargin;
+        width: 340px;
     }
 
     .h1TitleHomePage {
         font-size  : 44px;
         line-height: 52.8px;
-        @include zeroMargin
+        @include zeroMargin;
+        width: 283px;
     }
 
-    .h2TitleHomePageBlack,
+
+    .h2TitleHomePageBlack {
+        font-size  : 24px;
+        line-height: 28.8px;
+        @include zeroMargin;
+        flex-basis: 59.9%;
+    }
     .h2TitleHomePagePink {
         font-size  : 24px;
         line-height: 28.8px;
         @include zeroMargin;
-        flex-basis: 40%;
+        flex-basis: 30%;
     }
 
     .categories {
@@ -159,9 +170,10 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 790px) {
     .wrap {
-        width: 375px - 16px * 2px;
+        width: 375px - 16px * 2;
+
     }
 
     .header {
@@ -198,21 +210,28 @@
     }
 
     .linkTitleHomePage {
-        margin: 15%;
+        width: 280px;
     }
 
     .h1TitleHomePage {
         font-size  : 38px;
         line-height: 45.6px;
-        @include zeroMargin
+        @include zeroMargin;
+        flex-basis: 91%
     }
 
-    .h2TitleHomePageBlack,
+    .h2TitleHomePageBlack {
+        font-size  : 20px;
+        line-height: 24px;
+        @include zeroMargin;
+        flex-basis: 59.6%;
+    }
     .h2TitleHomePagePink {
         font-size  : 20px;
         line-height: 24px;
         @include zeroMargin;
         flex-basis: 32%;
+        padding-left: 5px;
     }
 
     .categories {

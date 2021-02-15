@@ -5,6 +5,7 @@
 }
 
 .headerWrap {
+  width: $desktop;
   height: 75px;
   @include position;
   justify-content: space-between;

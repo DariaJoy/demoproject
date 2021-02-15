@@ -1,22 +1,43 @@
 @media screen and (max-width: 1160px) {
     .productSlider {
-        width: 768px;
+        background-color: #F7F7F7;
     }
 
     .productDescriptionWpap {
-        width: 768px;
-    }
-
-    .pProductDescription {
+        width: auto;    .pProductDescription {
         width: 555px;
     }
 
+    .productImg {
+        width: 100%;
+    }
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 790px) {
+    .productSlider {
+        width : 375px;
+        margin: 0 auto;
+    }
+
     .productDescriptionWpap {
         width: 375px;
+    }
+
+    .backArrowProductSlider {
+        z-index : 8;
+        left    : -326px;
+        right   : 0;
+        position: absolute;
+        top     : -355px;
+    }
+
+    .forwardArrowProductSlider {
+        z-index : 8;
+        left    : 0;
+        right   : -326px;
+        position: absolute;
+        top     : -355px;
     }
 
     .pProductDescription {
@@ -30,4 +51,5 @@
     .therdChild {
         display: flex !important;
     }
+
 }

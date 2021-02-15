@@ -10,10 +10,9 @@
     }
 
     .filter[open] {
-        position: absolute;
-        width   : 360px;
-        height  : auto;
-        z-index : 7;
+        width  : 360px;
+        height : auto;
+        z-index: 7;
     }
 
     .tranding {
@@ -26,8 +25,22 @@
 
 }
 
-@media screen and (max-width: 800px) {
-    
+@media screen and (max-width: 790px) {
+
+    .productImg {
+        width : 374px;
+        height: 454px;
+    }
+
+    .productSliderLink {
+        position: absolute;
+        width   : 47px;
+        height  : 47px;
+        left    : 327px;
+        top     : 510px;
+    }
+
+
     .catalogProductsItemsCard:nth-child(3) {
         display: none;
     }
@@ -51,14 +64,15 @@
     }
 
     .filter {
+        width   : 60px;
         position: relative;
     }
 
     .filter[open] {
-        position: absolute;
-        width   : 360px;
-        height  : auto;
-
+        width       : 360px;
+        height      : auto;
+        padding-left: 10px;
+        position    : absolute;
     }
 
     .filter>summary {
@@ -70,6 +84,9 @@
         width : 35.7px;
     }
 
+    .catalogProductsHeaderTranding {
+        @include zeroMargin;
+    }
     .tranding {
         font-size    : 12px;
         padding-right: 23.98px

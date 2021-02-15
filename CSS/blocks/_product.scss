@@ -3,7 +3,16 @@
   display         : flex;
   justify-content : center;
   align-items     : center;
-  position        : relative;
+  position: relative;
+}
+
+.productSliderWrap {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  margin: 0 auto;
+  width           : $desktop;
+  background-color: #F7F7F7;
 }
 
 .backArrowProductSlider {
@@ -29,11 +38,25 @@
   border-radius  : 0;
   cursor         : pointer;
   transition     : 0.3s;
+  outline        : 0;
+}
+
+.productSliderLink::-moz-focus-inner {
+  border : 0;
+  outline: 0;
 }
 
 .productSliderLink:hover {
   color    : $mainPinkColor;
   transform: scale(1.2);
+  border   : 0;
+  outline  : 0;
+}
+
+.productSliderLink:focus,
+.productSliderLink:active {
+  border : 0;
+  outline: 0;
 }
 
 .forwardArrowProductSlider {
@@ -59,7 +82,7 @@
   flex-direction  : column;
   align-items     : center;
   background-color: #FFFFFF;
-  width: 1141px;
+  width           : 1141px;
 }
 
 .h2ProductDescription {
@@ -111,7 +134,7 @@
 .navProductDescription {
   @include zeroMargin;
   margin-top: 64.54px;
-  width: 373.02px;
+  width     : 373.02px;
 }
 
 .productDetailsWrap {
@@ -120,7 +143,7 @@
   justify-content: space-between;
 }
 
-.fa-chevron-down  {
+.fa-chevron-down {
   padding-left: 9px;
 }
 
@@ -131,14 +154,14 @@
 
 .chooseColore {
   @include zeroMargin;
-  outline      : none;
-  border       : none;
-  outline      : 0;
-  font-weight  : 400;
-  font-size    : 14px;
-  line-height  : 16.8px;
-  color        : #6F6E6E;
-  cursor       : pointer;
+  outline    : none;
+  border     : none;
+  outline    : 0;
+  font-weight: 400;
+  font-size  : 14px;
+  line-height: 16.8px;
+  color      : #6F6E6E;
+  cursor     : pointer;
 }
 
 .chooseColore ::-webkit-details-marker {
