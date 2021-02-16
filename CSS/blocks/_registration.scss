@@ -38,6 +38,7 @@ legend {
     font-size     : 13px;
     line-height   : 15.6px;
     padding-left  : 17.24px;
+    padding-right : 17.24px;
     text-transform: capitalize;
 }
 
@@ -55,15 +56,16 @@ legend {
 }
 
 .inputPassword {
-    width       : 360px;
-    height      : 45px;
-    margin-top  : 20px;
-    border      : 1px solid #A4A4A4;
-    color       : #222222;
-    font-weight : 300;
-    font-size   : 13px;
-    line-height : 15.6px;
-    padding-left: 17.24px;
+    width        : 360px;
+    height       : 45px;
+    margin-top   : 20px;
+    border       : 1px solid #A4A4A4;
+    color        : #222222;
+    font-weight  : 300;
+    font-size    : 13px;
+    line-height  : 15.6px;
+    padding-left : 17.24px;
+    padding-right: 17.24px;
 }
 
 .inputPassword:focus {
@@ -139,18 +141,24 @@ input[type="radio"] {
     text-align      : left;
     padding-left    : 26px;
     margin-bottom   : 96px;
-    transition: 0.3s;
+    transition      : 0.3s;
 }
 
 .buttonJoinIn img {
     padding-left: 20px;
 }
+
 .buttonJoinIn:hover {
     background-color: $mainPinkColor;
     color           : #ffffff;
     outline         : none;
-    animation: goColor 0.5s 1;
+    animation       : goColor 0.5s 1;
 }
+
+.registrationLoyaltyPerks {
+    margin-left: 128px;
+}
+
 .h2RegistrationLoyaltyPerks {
     font-weight   : 300;
     font-size     : 24px;

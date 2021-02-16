@@ -893,6 +893,7 @@ body {
 
 .footer {
   background-color: #222224;
+  margin-top: auto;
 }
 
 .footerWrap {
@@ -1458,6 +1459,12 @@ input[id="priceCheckbox"] {
 
 .productSlider {
   background-color: #F7F7F7;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.mediaProductWrap {
+  background-color: #F7F7F7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1468,6 +1475,7 @@ input[id="priceCheckbox"] {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  border-top: 1px solid #EAEAEA;
 }
 
 .productSliderWrap {
@@ -1494,6 +1502,7 @@ input[id="priceCheckbox"] {
   background-color: #F7F7F7;
   position: absolute;
   left: 5px;
+  font-size: 21px;
 }
 
 .productSliderLink {
@@ -1501,7 +1510,7 @@ input[id="priceCheckbox"] {
   color: #000000;
   height: 47px;
   width: 47px;
-  padding: 35%;
+  padding: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1521,6 +1530,8 @@ input[id="priceCheckbox"] {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   outline: 0;
+  font-size: 21px;
+  font-weight: 400;
 }
 
 .productSliderLink::-moz-focus-inner {
@@ -1852,7 +1863,6 @@ input[id="coloreOf"] {
   width: 18px;
   height: 18px;
   position: absolute;
-  margin: 0;
   background-color: #ffffff;
   border: none;
   outline: none;
@@ -2065,7 +2075,7 @@ input[id="coloreOf"] {
   font-weight: 300;
   font-size: 14px;
   line-height: 16.8px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
   background-color: #ffffff;
   width: 235px;
@@ -2092,6 +2102,16 @@ input[id="coloreOf"] {
   outline: none;
   -webkit-animation: goColor 0.5s 1;
           animation: goColor 0.5s 1;
+}
+
+.cartCheckout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .adressCartCheckout {
@@ -2123,6 +2143,7 @@ input[id="coloreOf"] {
   font-size: 13px;
   line-height: 15.6px;
   padding-left: 17.24px;
+  padding-right: 17.24px;
 }
 
 .adressCountry:focus {
@@ -2149,6 +2170,7 @@ input[id="coloreOf"] {
   font-size: 13px;
   line-height: 15.6px;
   padding-left: 17.24px;
+  padding-right: 17.24px;
 }
 
 .adressState:focus {
@@ -2167,6 +2189,7 @@ input[id="coloreOf"] {
   font-size: 13px;
   line-height: 15.6px;
   padding-left: 17.24px;
+  padding-right: 17.24px;
 }
 
 .adressPostcode:focus {
@@ -2433,6 +2456,7 @@ legend {
   font-size: 13px;
   line-height: 15.6px;
   padding-left: 17.24px;
+  padding-right: 17.24px;
   text-transform: capitalize;
 }
 
@@ -2459,6 +2483,7 @@ legend {
   font-size: 13px;
   line-height: 15.6px;
   padding-left: 17.24px;
+  padding-right: 17.24px;
 }
 
 .inputPassword:focus {
@@ -2560,6 +2585,10 @@ input[type="radio"] {
   outline: none;
   -webkit-animation: goColor 0.5s 1;
           animation: goColor 0.5s 1;
+}
+
+.registrationLoyaltyPerks {
+  margin-left: 128px;
 }
 
 .h2RegistrationLoyaltyPerks {
@@ -2995,44 +3024,62 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 1160px) {
-  .productSlider {
+  .mediaProductWrap {
     background-color: #F7F7F7;
+    width: 768px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
   }
   .productDescriptionWpap {
     width: 768px;
+    border: none;
+    margin-top: 0;
   }
-  .pProductDescription {
-    width: 555px;
+  .h4ProductDescription {
+    width: 768px;
   }
-  .productImg {
-    width: 100%;
+  .backArrowProductSlider {
+    z-index: 8;
+  }
+  .forwardArrowProductSlider {
+    z-index: 8;
   }
 }
 
 @media screen and (max-width: 790px) {
-  .productSlider {
-    width: 375px;
-    margin: 0 auto;
+  .mediaProductWrap {
+    background-color: #F7F7F7;
+    width: 374px;
+  }
+  .productSliderLink {
+    position: static;
   }
   .productDescriptionWpap {
     width: 375px;
   }
-  .backArrowProductSlider {
-    z-index: 8;
-    left: -326px;
-    right: 0;
-    position: absolute;
-    top: -355px;
-  }
-  .forwardArrowProductSlider {
-    z-index: 8;
-    left: 0;
-    right: -326px;
-    position: absolute;
-    top: -355px;
+  .productDescription {
+    margin-top: 85px;
+    border-bottom: 1px solid #EAEAEA;
   }
   .pProductDescription {
     width: 326px;
+  }
+  .h4ProductDescription {
+    width: 175px;
+    padding-bottom: 31.91px;
+  }
+  .productProductsItems {
+    padding-top: 64px;
   }
   .secondChild {
     display: none !important;
@@ -3041,6 +3088,178 @@ input[type="radio"] {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .cartContentWrap {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cartItems {
+    width: 734px;
+  }
+  .cartItemsFooter {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cartCheckout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: -64px;
+  }
+  .totalSubmit {
+    margin-top: 157px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .cartContentWrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 96px;
+  }
+  .cartItems {
+    width: 358px;
+    height: 188px;
+    margin-top: 0;
+  }
+  .cartItemsBlock {
+    margin-top: 32px;
+  }
+  .cartItemsBlockImg {
+    width: 143.86px;
+    height: 188px;
+  }
+  .cartItemsBlockText {
+    padding-top: 22.85px;
+  }
+  .h2CartItemsBlock {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  .h3CartItemsBlockBlack {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .h4CartItemsBlockPink {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .h4CartItemsBlockGrey {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .inputCartItemsBlock {
+    width: 24.16px;
+    height: 15.33px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 1px;
+  }
+  .cartItemsBlockHeaderBtn {
+    margin-left: 30px;
+  }
+  .cartItemsBlockHeaderBtn svg {
+    width: 9.88px;
+    height: 11px;
+  }
+  .cartItemsFooter {
+    margin-top: 30px;
+  }
+  .cartItemsFooter a {
+    margin-left: 9px;
+  }
+  .cartItemsBtn {
+    font-size: 12px;
+    line-height: 14.4px;
+    width: 175px;
+    height: 33px;
+    text-transform: capitalize;
+  }
+  .cartCheckout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-top: 240px;
+  }
+  .totalSubmit {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .registrationFormsWrap {
+    width: 768px;
+  }
+  .registrationLoyaltyPerks {
+    width: 370px;
+    margin-left: 22px;
+  }
+  .h2RegistrationLoyaltyPerks {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .pRegistrationLoyaltyPerks {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  .listRegistrationLoyaltyPerks li {
+    font-size: 16px;
+    line-height: 19.2px;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .registrationFormsWrap {
+    width: 374px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registrationFormsPerson fieldset {
+    margin-top: 40.41px;
+  }
+  .buttonJoinIn {
+    margin-bottom: 40px;
+  }
+  .h2RegistrationLoyaltyPerks {
+    margin-top: 0;
+  }
+  .registrationLoyaltyPerks {
+    margin-bottom: 96.19px;
   }
 }
 /*# sourceMappingURL=style.css.map */
