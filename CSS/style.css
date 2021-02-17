@@ -556,6 +556,24 @@ body {
 
 .overlayLink {
   text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+  padding: 10px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlayLink svg {
+  margin-right: 11px;
 }
 
 .overlayButtun {
@@ -974,6 +992,10 @@ body {
   background-color: #F8F3F4;
 }
 
+.menuBreadcrumbCatalog a {
+  text-decoration: none;
+}
+
 .breadcrumbCatalogWrap {
   height: 148px;
   display: -webkit-box;
@@ -1235,7 +1257,7 @@ body {
   width: 132px;
 }
 
-input[id="trandingNow"] {
+input[name="trandingNow"] {
   margin: 10px;
   cursor: pointer;
 }
@@ -1298,7 +1320,7 @@ input[id="trandingNow"] {
   width: 80px;
 }
 
-input[id="sizeCheckbox"] {
+input[name="sizeCheckbox"] {
   margin: 10px;
   cursor: pointer;
 }
