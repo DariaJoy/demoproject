@@ -1,0 +1,122 @@
+@media screen and (max-width: 1160px) {
+    .cartContentWrap {
+        width         : 768px;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .cartItems {
+        width: 734px;
+    }
+
+    .cartItemsFooter {
+        justify-content: space-around;
+    }
+
+    .cartCheckout {
+        display        : flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top     : -64px;
+    }
+
+    .totalSubmit {
+        margin-top : 157px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .cartContentWrap {
+        flex-wrap     : nowrap;
+        flex-direction: column;
+        margin-bottom: 96px;
+    }
+
+    .cartItems {
+        width     : 358px;
+        height    : 188px;
+        margin-top: 0;
+    }
+
+    .cartItemsBlock {
+        margin-top: 32px;
+    }
+
+    .cartItemsBlockImg {
+        width : 143.86px;
+        height: 188px;
+    }
+
+    .cartItemsBlockText {
+        padding-top: 22.85px;
+    }
+
+    .h2CartItemsBlock {
+        font-weight: 400;
+        font-size  : 16px;
+        line-height: 19.2px;
+    }
+
+    .h3CartItemsBlockBlack {
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 16.8px;
+    }
+
+    .h4CartItemsBlockPink {
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 16.8px;
+    }
+
+    .h4CartItemsBlockGrey {
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 16.8px;
+    }
+
+    .inputCartItemsBlock {
+        width      : 24.16px;
+        height     : 15.33px;
+        font-size  : 10px;
+        line-height: 12px;
+        padding: 1px;
+        
+    }
+
+    .cartItemsBlockHeaderBtn {
+        margin-left: 30px;
+    }
+
+    .cartItemsBlockHeaderBtn svg {
+        width : 9.88px;
+        height: 11px;
+    }
+    .cartItemsFooter{
+        margin-top: 30px;
+    }
+    .cartItemsFooter a {
+        margin-left: 9px;
+    }
+    .cartItemsBtn {
+        font-size  : 12px;
+        line-height: 14.4px;
+        width      : 175px;
+        height     : 33px;
+        text-transform: capitalize;
+
+    }
+
+    .cartCheckout {
+        display       : flex;
+        flex-direction: column;
+        position      : relative;
+        margin-top    : 240px;
+    }
+
+    .totalSubmit {
+        margin-top: 48px;
+    }
+}

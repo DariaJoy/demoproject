@@ -1,0 +1,47 @@
+@media screen and (max-width: 1160px) {
+    .registrationFormsWrap {
+        width: 768px;
+    }
+
+    .registrationLoyaltyPerks {
+        width: 370px;
+        margin-left: 22px;
+    }
+
+    .h2RegistrationLoyaltyPerks {
+        font-size     : 16px;
+        padding-bottom: 10px;
+    }
+
+    .pRegistrationLoyaltyPerks {
+        font-size  : 16px;
+        line-height: 19.2px;
+    }
+
+    .listRegistrationLoyaltyPerks li {
+        font-size  : 16px;
+        line-height: 19.2px;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .registrationFormsWrap {
+        width: 374px;
+        flex-direction: column;
+    }
+    .registrationFormsPerson fieldset {
+        margin-top: 40.41px;
+    }
+
+    .buttonJoinIn {
+        margin-bottom: 40px;
+    }
+    .h2RegistrationLoyaltyPerks {
+        margin-top: 0;
+    }
+
+    .registrationLoyaltyPerks {
+        margin-bottom: 96.19px;
+    }
+}

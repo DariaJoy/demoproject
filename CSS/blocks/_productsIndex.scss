@@ -31,7 +31,7 @@
   @include position;
   flex-wrap      : wrap;
   justify-content: space-between;
- 
+
 }
 
 .productsImgWrapLink {
@@ -76,8 +76,18 @@
 
 .overlayLink {
   text-decoration: none;
+  text-align     : center;
+  color          : #FFFFFF;
+  display        : block;
+  padding        : 10px;
+  @include zeroMargin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.overlayLink svg {
+margin-right: 11px;
+}
 .overlayButtun {
   @include position;
   justify-content: space-around;
@@ -120,11 +130,13 @@
 .productsImg5 {
   flex-basis      : 30%;
   background-color: #F8F8F8;
+  margin-bottom   : 30px;
 }
 
 .productsImg6 {
   flex-basis      : 30%;
   background-color: #F8F8F8;
+  margin-bottom   : 30px;
 }
 
 .h3ProductsImg {
@@ -137,11 +149,12 @@
 }
 
 .h4ProductsImg {
-  font-weight: 300;
-  font-size  : 14px;
-  line-height: 16.8px;
-  margin-left: 18px;
-  color      : #5D5D5D;
+  font-weight  : 300;
+  font-size    : 14px;
+  line-height  : 16.8px;
+  margin-left  : 18px;
+  color        : #5D5D5D;
+  padding-right: 28.8px;
 }
 
 .h5ProductsImg {
@@ -156,8 +169,8 @@
   @include position;
   justify-content: center;
   align-content  : center;
-  width: $desktop;
-  margin-top     : 48px;
+  width          : $desktop;
+  margin-top     : 18px;
   margin-bottom  : 95px;
 
 }
@@ -171,7 +184,7 @@
   align-self      : center;
   border          : none;
   border-radius   : 0;
- 
+
 }
 
 .button a {
@@ -182,17 +195,19 @@
   line-height    : 19.2px;
   text-transform : capitalize;
   text-align     : center;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 15px;
+  display        : block;
+  width          : 100%;
+  height         : 100%;
+  padding-top    : 15px;
 }
 
 .button:hover {
   animation       : goColor 0.5s 1;
   background-color: $mainPinkColor;
+  outline         : none;
 }
-.button a:hover{
+
+.button a:hover {
   color: #FFFFFF;
-  
+
 }

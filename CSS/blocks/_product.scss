@@ -1,9 +1,26 @@
 .productSlider {
   background-color: #F7F7F7;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+  
+}
+
+.mediaProductWrap {
+  background-color: #F7F7F7;
   display         : flex;
   justify-content : center;
   align-items     : center;
   position        : relative;
+  border-top: 1px solid #EAEAEA;
+}
+
+.productSliderWrap {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  margin          : 0 auto;
+  width           : $desktop;
+  background-color: #F7F7F7;
 }
 
 .backArrowProductSlider {
@@ -13,14 +30,16 @@
   background-color: #F7F7F7;
   position        : absolute;
   left            : 5px;
-}
+  font-size: 21px;
+ }
+
 
 .productSliderLink {
   background-color: #D8D8D8;
   color           : #000000;
   height          : 47px;
   width           : 47px;
-  padding         : 35%;
+  padding         : 25%;
   @include position;
   justify-content: center;
   align-content  : center;
@@ -29,11 +48,27 @@
   border-radius  : 0;
   cursor         : pointer;
   transition     : 0.3s;
+  outline        : 0;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.productSliderLink::-moz-focus-inner {
+  border : 0;
+  outline: 0;
 }
 
 .productSliderLink:hover {
   color    : $mainPinkColor;
   transform: scale(1.2);
+  border   : 0;
+  outline  : 0;
+}
+
+.productSliderLink:focus,
+.productSliderLink:active {
+  border : 0;
+  outline: 0;
 }
 
 .forwardArrowProductSlider {
@@ -59,6 +94,7 @@
   flex-direction  : column;
   align-items     : center;
   background-color: #FFFFFF;
+  width           : 1141px;
 }
 
 .h2ProductDescription {
@@ -110,7 +146,7 @@
 .navProductDescription {
   @include zeroMargin;
   margin-top: 64.54px;
-  width: 373.02px;
+  width     : 373.02px;
 }
 
 .productDetailsWrap {
@@ -119,7 +155,7 @@
   justify-content: space-between;
 }
 
-.fa-chevron-down  {
+.fa-chevron-down {
   padding-left: 9px;
 }
 
@@ -130,14 +166,14 @@
 
 .chooseColore {
   @include zeroMargin;
-  outline      : none;
-  border       : none;
-  outline      : 0;
-  font-weight  : 400;
-  font-size    : 14px;
-  line-height  : 16.8px;
-  color        : #6F6E6E;
-  cursor       : pointer;
+  outline    : none;
+  border     : none;
+  outline    : 0;
+  font-weight: 400;
+  font-size  : 14px;
+  line-height: 16.8px;
+  color      : #6F6E6E;
+  cursor     : pointer;
 }
 
 .chooseColore ::-webkit-details-marker {
@@ -180,7 +216,7 @@
 
 }
 
-input[id="coloreOf"] {
+input[name="coloreOf"] {
   margin: 10px;
   cursor: pointer
 }

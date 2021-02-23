@@ -30,6 +30,8 @@
 }
 
 .filter[open] {
+  width: 360px;
+  height: auto;
   padding-left: 10px;
   box-shadow  : 6px 4px 35px rgba(0, 0, 0, 0.21);
   cursor      : pointer;
@@ -169,7 +171,7 @@
 
 }
 
-input[id="trandingNow"] {
+input[name="trandingNow"] {
   margin: 10px;
   cursor: pointer
 }
@@ -225,7 +227,7 @@ input[id="trandingNow"] {
 
 }
 
-input[id="sizeCheckbox"] {
+input[name="sizeCheckbox"] {
   margin: 10px;
   cursor: pointer
 }

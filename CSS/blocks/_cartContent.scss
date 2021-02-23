@@ -44,10 +44,9 @@
 }
 
 .cartItemsBlockHeaderBtn {
-    width   : 18px;
-    height  : 18px;
-    position: absolute;
-    @include zeroMargin;
+    width           : 18px;
+    height          : 18px;
+    position        : absolute;
     background-color: #ffffff;
     border          : none;
     outline         : none;
@@ -190,7 +189,7 @@
     font-weight     : 300;
     font-size       : 14px;
     line-height     : 16.8px;
-    text-transform  : capitalize;
+    text-transform  : uppercase;
     text-align      : center;
     background-color: #ffffff;
     width           : 235px;
@@ -215,7 +214,12 @@
     background-color: $mainPinkColor;
     color           : #ffffff;
     outline         : none;
-    animation: goColor 0.5s 1;
+    animation       : goColor 0.5s 1;
+}
+
+.cartCheckout {
+    display       : flex;
+    flex-direction: column;
 }
 
 .adressCartCheckout {
@@ -233,16 +237,16 @@
 }
 
 .adressCountry {
-    width       : 360px;
-    height      : 45px;
-    margin-top  : 20px;
-    border      : 1px solid #A4A4A4;
-    color       : #222222;
-    font-weight : 400;
-    font-size   : 13px;
-    line-height : 15.6px;
-    padding-left: 17.24px;
-
+    width        : 360px;
+    height       : 45px;
+    margin-top   : 20px;
+    border       : 1px solid #A4A4A4;
+    color        : #222222;
+    font-weight  : 400;
+    font-size    : 13px;
+    line-height  : 15.6px;
+    padding-left : 17.24px;
+    padding-right: 17.24px;
 }
 
 .adressCountry:focus {
@@ -260,15 +264,16 @@
 }
 
 .adressState {
-    width       : 360px;
-    height      : 45px;
-    margin-top  : 20px;
-    border      : 1px solid #A4A4A4;
-    color       : #222222;
-    font-weight : 400;
-    font-size   : 13px;
-    line-height : 15.6px;
-    padding-left: 17.24px;
+    width        : 360px;
+    height       : 45px;
+    margin-top   : 20px;
+    border       : 1px solid #A4A4A4;
+    color        : #222222;
+    font-weight  : 400;
+    font-size    : 13px;
+    line-height  : 15.6px;
+    padding-left : 17.24px;
+    padding-right: 17.24px;
 }
 
 .adressState:focus {
@@ -278,15 +283,16 @@
 }
 
 .adressPostcode {
-    width       : 360px;
-    height      : 45px;
-    margin-top  : 20px;
-    border      : 1px solid #A4A4A4;
-    color       : #222222;
-    font-weight : 400;
-    font-size   : 13px;
-    line-height : 15.6px;
-    padding-left: 17.24px;
+    width        : 360px;
+    height       : 45px;
+    margin-top   : 20px;
+    border       : 1px solid #A4A4A4;
+    color        : #222222;
+    font-weight  : 400;
+    font-size    : 13px;
+    line-height  : 15.6px;
+    padding-left : 17.24px;
+    padding-right: 17.24px;
 }
 
 .adressPostcode:focus {
@@ -315,7 +321,7 @@
     background-color: $mainPinkColor;
     color           : #ffffff;
     outline         : none;
-    animation: goColor 0.5s 1;
+    animation       : goColor 0.5s 1;
 }
 
 .totalSubmit {
@@ -431,17 +437,17 @@
 
 @keyframes goColor {
     0% {
-        background-color:$mainPinkColor;
-        color: #E2E2E2;
+        background-color: $mainPinkColor;
+        color           : #E2E2E2;
     }
-    50%{
+
+    50% {
         background-color: #ffffff;
-        color: $mainPinkColor;
+        color           : $mainPinkColor;
     }
+
     100% {
-        background-color:$mainPinkColor;
-        color: #E2E2E2;
+        background-color: $mainPinkColor;
+        color           : #E2E2E2;
     }
-  }
-  
-  
+}

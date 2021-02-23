@@ -1,7 +1,9 @@
 .breadcrumbCatalog {
   background-color: #F8F3F4;
 }
-
+.menuBreadcrumbCatalog a{
+text-decoration: none;
+}
 .breadcrumbCatalogWrap {
   height: 148px;
   @include position;
