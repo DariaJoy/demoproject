@@ -1743,7 +1743,7 @@ input[id="priceCheckbox"] {
   width: 128.02px;
 }
 
-input[id="coloreOf"] {
+input[name="coloreOf"] {
   margin: 10px;
   cursor: pointer;
 }
